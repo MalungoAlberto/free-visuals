@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ccafc7bdaa74c9bbf05bd14b59d67334 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+<div style="
+     position: fixed; 
+     bottom: 20px; left: 20px; z-index: 9999; 
+     background: white; padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px;
+     box-shadow: 0 2px 8px rgba(0,0,0,0.15); font-family: Arial; font-size: 12px;">
+  <div style="font-weight: 700; margin-bottom: 6px;">Rota solicitada</div>
+  <div>1) Angola → 2) Namíbia → 3) África do Sul → 4) Angola → 5) Rio de Janeiro → 6) Brasília → 7) São Paulo → 8) Florianópolis → 9) Porto Alegre</div>
+  <div style="margin-top:6px;"><span style="display:inline-block;width:14px;height:4px;background:#1e3a8a;margin-right:6px;"></span>Trajeto (sentido animado)</div>
+</div>
+    
+            <div class="folium-map" id="map_ccafc7bdaa74c9bbf05bd14b59d67334" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ccafc7bdaa74c9bbf05bd14b59d67334 = L.map(
+                "map_ccafc7bdaa74c9bbf05bd14b59d67334",
+                {
+                    center: [-15.0, -15.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_ccafc7bdaa74c9bbf05bd14b59d67334);
+
+            
+
+        
+    
+            var tile_layer_0420b079b7a58d8c552d557b31c71e84 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ccafc7bdaa74c9bbf05bd14b59d67334);
+        
+    
+            var marker_1b866d37e98dbe7385528d4d39351357 = L.marker(
+                [-8.8383, 13.2344],
+                {}
+            ).addTo(map_ccafc7bdaa74c9bbf05bd14b59d67334);
+        
+    
+            var div_icon_f2fb31192d048913451ec57eb1deb072 = L.divIcon({"className": "empty", "html": "\n            \u003cdiv style=\"font-size: 12px; font-weight: 700; color: white; background: #2b6cb0; border-radius: 12px; padding: 2px 6px; border: 1px solid #1a4f85;\"\u003e\n                1)\n            \u003c/div\u003e\n        "});
+            marker_1b866d37e98dbe7385528d4d39351357.setIcon(div_icon_f2fb31192d048913451ec57eb1deb072);
+        
+    
+        var popup_05f346bd2a173c978394f0cfaf137477 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30f29d3c51287af34c9f11da5edc7c38 = $(`<div id="html_30f29d3c51287af34c9f11da5edc7c38" style="width: 100.0%; height: 100.0%;"><b>1) Angola – Luanda</b></div>`)[0];
+            popup_05f346bd2a173c978394f0cfaf137477.setContent(html_30f29d3c51287af34c9f11da5edc7c38);
+        
+
+        marker_1b866d37e98dbe7385528d4d39351357.bindPopup(popup_05f346bd2a173c978394f0cfaf137477)
+        ;
+
+        
+    
+    
+            marker_1b866d37e98dbe7385528d4d39351357.bindTooltip(
+                `<div>
+                     1) Angola – Luanda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b911d58757c97e9ed7e616a479a66331 = L.marker(
+                [-22.5597, 17.0832],
+                {}
+            ).addTo(map_ccafc7bdaa74c9bbf05bd14b59d67334);
+        
+    
+            var div_icon_e61744346e5b27c0f370c534e9cfd689 = L.divIcon({"className": "empty", "html": "\n            \u003cdiv style=\"font-size: 12px; font-weight: 700; color: white; background: #2b6cb0; border-radius: 12px; padding: 2px 6px; border: 1px solid #1a4f85;\"\u003e\n                2)\n            \u003c/div\u003e\n        "});
+            marker_b911d58757c97e9ed7e616a479a66331.setIcon(div_icon_e61744346e5b27c0f370c534e9cfd689);
+        
+    
+        var popup_15ccc6f41d63a1742e8498e242c206b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1b1e78c980dd97b2069cfba89a73586 = $(`<div id="html_f1b1e78c980dd97b2069cfba89a73586" style="width: 100.0%; height: 100.0%;"><b>2) Namíbia – Windhoek</b></div>`)[0];
+            popup_15ccc6f41d63a1742e8498e242c206b0.setContent(html_f1b1e78c980dd97b2069cfba89a73586);
+        
+
+        marker_b911d58757c97e9ed7e616a479a66331.bindPopup(popup_15ccc6f41d63a1742e8498e242c206b0)
+        ;
+
+        
+    
+    
+            marker_b911d58757c97e9ed7e616a479a66331.bindTooltip(
+                `<div>
+                     2) Namíbia – Windhoek
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12ff2f8b5d4171e6f493788e6d2bcc03 = L.marker(
+                [-25.7479, 28.2293],
+                {}
+            ).addTo(map_ccafc7bdaa74c9bbf05bd14b59d67334);
+        
+    
+            var div_icon_d1ae3a6c1486e84902ee432cd48a3302 = L.divIcon({"className": "empty", "html": "\n            \u003cdiv style=\"font-size: 12px; font-weight: 700; color: white; background: #2b6cb0; border-radius: 12px; padding: 2px 6px; border: 1px solid #1a4f85;\"\u003e\n                3)\n            \u003c/div\u003e\n        "});
+            marker_12ff2f8b5d4171e6f493788e6d2bcc03.setIcon(div_icon_d1ae3a6c1486e84902ee432cd48a3302);
+        
+    
+        var popup_b0493583990645d50d5ecd50d95bcc68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abccf3bac3bcd4fb17cedb83b0350819 = $(`<div id="html_abccf3bac3bcd4fb17cedb83b0350819" style="width: 100.0%; height: 100.0%;"><b>3) África do Sul – Pretoria</b></div>`)[0];
+            popup_b0493583990645d50d5ecd50d95bcc68.setContent(html_abccf3bac3bcd4fb17cedb83b0350819);
+        
+
+        marker_12ff2f8b5d4171e6f493788e6d2bcc03.bindPopup(popup_b0493583990645d50d5ecd50d95bcc68)
+        ;
+
+        
+    
+    
+            marker_12ff2f8b5d4171e6f493788e6d2bcc03.bindTooltip(
+                `<div>
+                     3) África do Sul – Pretoria
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_652e80be79198ca807ab338caa4fd9d3 = L.marker(
+                [-8.8383, 13.2344],
+                {}
+            ).addTo(map_ccafc7bdaa74c9bbf05bd14b59d67334);
+        
+    
+            var div_icon_c1b51c94c36406a2d28afc7d0cb97285 = L.divIcon({"className": "empty", "html": "\n            \u003cdiv style=\"font-size: 12px; font-weight: 700; color: white; background: #2b6cb0; border-radius: 12px; padding: 2px 6px; border: 1px solid #1a4f85;\"\u003e\n                4)\n            \u003c/div\u003e\n        "});
+            marker_652e80be79198ca807ab338caa4fd9d3.setIcon(div_icon_c1b51c94c36406a2d28afc7d0cb97285);
+        
+    
+        var popup_679ac48b2812901172a6e1b7e838b1fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb5d56f2fbb7772ed8980e098f3107d0 = $(`<div id="html_eb5d56f2fbb7772ed8980e098f3107d0" style="width: 100.0%; height: 100.0%;"><b>4) Angola – Luanda (volta)</b></div>`)[0];
+            popup_679ac48b2812901172a6e1b7e838b1fd.setContent(html_eb5d56f2fbb7772ed8980e098f3107d0);
+        
+
+        marker_652e80be79198ca807ab338caa4fd9d3.bindPopup(popup_679ac48b2812901172a6e1b7e838b1fd)
+        ;
+
+        
+    
+    
+            marker_652e80be79198ca807ab338caa4fd9d3.bindTooltip(
+                `<div>
+                     4) Angola – Luanda (volta)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b1608c1cdcb4bff69aa81bec43e6d64 = L.marker(
+                [-22.9068, -43.1729],
+                {}
+            ).addTo(map_ccafc7bdaa74c9bbf05bd14b59d67334);
+        
+    
+            var div_icon_13565ea5afcbe18a8a83b93c6ee25bb8 = L.divIcon({"className": "empty", "html": "\n            \u003cdiv style=\"font-size: 12px; font-weight: 700; color: white; background: #2b6cb0; border-radius: 12px; padding: 2px 6px; border: 1px solid #1a4f85;\"\u003e\n                5)\n            \u003c/div\u003e\n        "});
+            marker_6b1608c1cdcb4bff69aa81bec43e6d64.setIcon(div_icon_13565ea5afcbe18a8a83b93c6ee25bb8);
+        
+    
+        var popup_4b08fb0a5b1a94141e6de3e23e9d5576 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_024e883354574e6a13af21f95e568643 = $(`<div id="html_024e883354574e6a13af21f95e568643" style="width: 100.0%; height: 100.0%;"><b>5) Brasil – Rio de Janeiro</b></div>`)[0];
+            popup_4b08fb0a5b1a94141e6de3e23e9d5576.setContent(html_024e883354574e6a13af21f95e568643);
+        
+
+        marker_6b1608c1cdcb4bff69aa81bec43e6d64.bindPopup(popup_4b08fb0a5b1a94141e6de3e23e9d5576)
+        ;
+
+        
+    
+    
+            marker_6b1608c1cdcb4bff69aa81bec43e6d64.bindTooltip(
+                `<div>
+                     5) Brasil – Rio de Janeiro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d15c19febe10e5d53f126a274e97d36 = L.marker(
+                [-15.7801, -47.9292],
+                {}
+            ).addTo(map_ccafc7bdaa74c9bbf05bd14b59d67334);
+        
+    
+            var div_icon_f11accdabebd6a7b15f4169c36228a6d = L.divIcon({"className": "empty", "html": "\n            \u003cdiv style=\"font-size: 12px; font-weight: 700; color: white; background: #2b6cb0; border-radius: 12px; padding: 2px 6px; border: 1px solid #1a4f85;\"\u003e\n                6)\n            \u003c/div\u003e\n        "});
+            marker_6d15c19febe10e5d53f126a274e97d36.setIcon(div_icon_f11accdabebd6a7b15f4169c36228a6d);
+        
+    
+        var popup_08e6275d7e0af7a076fc624fc7a101d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07e1aec2b5d99ff0619ce4e783a9d3d0 = $(`<div id="html_07e1aec2b5d99ff0619ce4e783a9d3d0" style="width: 100.0%; height: 100.0%;"><b>6) Brasília</b></div>`)[0];
+            popup_08e6275d7e0af7a076fc624fc7a101d5.setContent(html_07e1aec2b5d99ff0619ce4e783a9d3d0);
+        
+
+        marker_6d15c19febe10e5d53f126a274e97d36.bindPopup(popup_08e6275d7e0af7a076fc624fc7a101d5)
+        ;
+
+        
+    
+    
+            marker_6d15c19febe10e5d53f126a274e97d36.bindTooltip(
+                `<div>
+                     6) Brasília
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29bfd7d558c54d52479d97c0995f6e63 = L.marker(
+                [-23.5505, -46.6333],
+                {}
+            ).addTo(map_ccafc7bdaa74c9bbf05bd14b59d67334);
+        
+    
+            var div_icon_8b13d3ff60386a105e292da70c4e0864 = L.divIcon({"className": "empty", "html": "\n            \u003cdiv style=\"font-size: 12px; font-weight: 700; color: white; background: #2b6cb0; border-radius: 12px; padding: 2px 6px; border: 1px solid #1a4f85;\"\u003e\n                7)\n            \u003c/div\u003e\n        "});
+            marker_29bfd7d558c54d52479d97c0995f6e63.setIcon(div_icon_8b13d3ff60386a105e292da70c4e0864);
+        
+    
+        var popup_4edbbbd5a305d098984b48a4ba1a9258 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_456e4a736d4a7e0cf50a1ad34b939a5b = $(`<div id="html_456e4a736d4a7e0cf50a1ad34b939a5b" style="width: 100.0%; height: 100.0%;"><b>7) São Paulo</b></div>`)[0];
+            popup_4edbbbd5a305d098984b48a4ba1a9258.setContent(html_456e4a736d4a7e0cf50a1ad34b939a5b);
+        
+
+        marker_29bfd7d558c54d52479d97c0995f6e63.bindPopup(popup_4edbbbd5a305d098984b48a4ba1a9258)
+        ;
+
+        
+    
+    
+            marker_29bfd7d558c54d52479d97c0995f6e63.bindTooltip(
+                `<div>
+                     7) São Paulo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_322de3a7c4d42d3f1ad9e9fa1e140d14 = L.marker(
+                [-27.5969, -48.5482],
+                {}
+            ).addTo(map_ccafc7bdaa74c9bbf05bd14b59d67334);
+        
+    
+            var div_icon_8e659a6c791387f3f0b19425e171696e = L.divIcon({"className": "empty", "html": "\n            \u003cdiv style=\"font-size: 12px; font-weight: 700; color: white; background: #2b6cb0; border-radius: 12px; padding: 2px 6px; border: 1px solid #1a4f85;\"\u003e\n                8)\n            \u003c/div\u003e\n        "});
+            marker_322de3a7c4d42d3f1ad9e9fa1e140d14.setIcon(div_icon_8e659a6c791387f3f0b19425e171696e);
+        
+    
+        var popup_6361324cf19486d7c5456198a1617e5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d561fee1a78d3e282f357b9f8fe9f498 = $(`<div id="html_d561fee1a78d3e282f357b9f8fe9f498" style="width: 100.0%; height: 100.0%;"><b>8) Florianópolis</b></div>`)[0];
+            popup_6361324cf19486d7c5456198a1617e5e.setContent(html_d561fee1a78d3e282f357b9f8fe9f498);
+        
+
+        marker_322de3a7c4d42d3f1ad9e9fa1e140d14.bindPopup(popup_6361324cf19486d7c5456198a1617e5e)
+        ;
+
+        
+    
+    
+            marker_322de3a7c4d42d3f1ad9e9fa1e140d14.bindTooltip(
+                `<div>
+                     8) Florianópolis
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fe418322c293b41ec558ea7c83715ae = L.marker(
+                [-30.0346, -51.2177],
+                {}
+            ).addTo(map_ccafc7bdaa74c9bbf05bd14b59d67334);
+        
+    
+            var div_icon_9438dd91f1a09b766b10106a0f830412 = L.divIcon({"className": "empty", "html": "\n            \u003cdiv style=\"font-size: 12px; font-weight: 700; color: white; background: #2b6cb0; border-radius: 12px; padding: 2px 6px; border: 1px solid #1a4f85;\"\u003e\n                9)\n            \u003c/div\u003e\n        "});
+            marker_2fe418322c293b41ec558ea7c83715ae.setIcon(div_icon_9438dd91f1a09b766b10106a0f830412);
+        
+    
+        var popup_9e9929bc2fc159d18bc24f8ad27ab5ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84ede3daa53624b63a32dd229399eb3a = $(`<div id="html_84ede3daa53624b63a32dd229399eb3a" style="width: 100.0%; height: 100.0%;"><b>9) Porto Alegre</b></div>`)[0];
+            popup_9e9929bc2fc159d18bc24f8ad27ab5ae.setContent(html_84ede3daa53624b63a32dd229399eb3a);
+        
+
+        marker_2fe418322c293b41ec558ea7c83715ae.bindPopup(popup_9e9929bc2fc159d18bc24f8ad27ab5ae)
+        ;
+
+        
+    
+    
+            marker_2fe418322c293b41ec558ea7c83715ae.bindTooltip(
+                `<div>
+                     9) Porto Alegre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_acd20d33ffd2738fdca8fb2d09433c24 = L.polyline.antPath(
+              [[-8.8383, 13.2344], [-22.5597, 17.0832], [-25.7479, 28.2293], [-8.8383, 13.2344], [-22.9068, -43.1729], [-15.7801, -47.9292], [-23.5505, -46.6333], [-27.5969, -48.5482], [-30.0346, -51.2177]],
+              {"bubblingMouseEvents": true, "color": "#1e3a8a", "dashArray": [10, 20], "dashOffset": null, "delay": 800, "fill": false, "fillColor": "#1e3a8a", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#60a5fa", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+        ).addTo(map_ccafc7bdaa74c9bbf05bd14b59d67334);
+        
+    
+            map_ccafc7bdaa74c9bbf05bd14b59d67334.fitBounds(
+                [[-8.8383, 13.2344], [-22.5597, 17.0832], [-25.7479, 28.2293], [-8.8383, 13.2344], [-22.9068, -43.1729], [-15.7801, -47.9292], [-23.5505, -46.6333], [-27.5969, -48.5482], [-30.0346, -51.2177]],
+                {"padding": [20, 20]}
+            );
+        
+</script>
+</html>
