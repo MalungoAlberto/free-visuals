@@ -1,0 +1,57 @@
+﻿Topic;Plataform;Released Date;Project;REPORT;Iniciatives;Level
+US;Tableau;09/jun/21;Source of Sale CPO National;Project;Migration;PL
+US;Tableau;13/jul/22;CPO Daily Retail;Project;Migration;PL I
+US;Tableau;05/ago/22;Statistical Analysis - Retail Analysis;Project;Migration;PL I
+US;Tableau;14/set/21;Owner Loyalty Report ;Project;Migration;PL
+US;Tableau;11/abr/21;Delivery & Process Confirmation Report;Project;Migration;PL
+US;Tableau;04/abr/21;Wholesale by Series;Project;Migration;PL I
+US;Tableau;30/ago/22;Daily Retail;Project;Migration;PL I
+US;Tableau;18/mai/21;Consumer Retails;Project;Migration;PL
+US;Tableau;08/mar/22;MVP for SPARC - Phase 1;Project;New Iniciative;PL I
+US;Power BI;09/jun/22;NPS Training;Project;Migration;PL I
+US;Power BI;11/nov/21;FF-AM Finances - Funding Report;Project;Migration;PL
+US;Power BI;07/jan/22;FF-AM Finances - US Capital;Project;Migration;PL I
+UK;Qlik Sense;17/nov/22;Sales 15.1 - Master Model List;Project;Migration;PL I
+UK;Qlik Sense;17/nov/22;Sales 15.2 - Master Retail List ;Project;Migration;PL I
+UK;Qlik Sense;18/nov/22;Sales 15.4 - Master Option List (Bikes);Project;Migration;PL I
+UK;Qlik Sense;17/nov/22;Sales 15.5 - Master Option List (CARS);Project;Migration;PL I
+US;Power BI;26/jun/23;FF-AM Finances - Liquidity Planning - Phase 1;Project;Migration;PL II
+UK;Qlik Sense;17/nov/22;Sales 15.7 - Factory by AG Codes ;Project;Migration;PL I
+UK;Qlik Sense;04/nov/22;P&L  27.1 - Returns;Project;Migration;PL I
+UK;Qlik Sense;11/abr/22;P&L  32.1.1 - Technical Campaigns;Project;Migration;PL I
+UK;Qlik Sense;03/mar/23;P&L 43.1 - Retailer Reports ;Project;Migration;PL II
+US;Tableau;07/dez/23;VIA Analyics;Project;New Iniciative;PL III
+US;Tableau;16/out/23;MVP for SPARC - Phase 2;Project;New Iniciative;PL III
+US;Tableau;17/out/23;Tire Tax for Georgia;Project;Migration;PL III
+Training;MyTMS;07/jun/22;BMW GROUP PRIVACY CORPORATE RULES;Training;Training;PL I
+Training;MyTMS;28/mar/22;CYBER SECURITY BASIC MODULE;Training;Training;PL I
+Training;MyTMS;20/abr/22;INFORMATION PROTECTION BASIC TRAINING;Training;Training;PL I
+Training;MyTMS;20/abr/22;DATA AND ANALYTICS;Training;Training;PL I
+Training;Qlik View;01/dez/23;Qlik View training;Training;Training;PL III
+Training;QuickSight;02/nov/23;Basic Training;Training;Training;PL III
+Training;QuickSight;04/jan/24;AWS re:Invent 2023 - Generative BI in Amazon QuickSight (BSI101);Training;Training;PL III
+Training;QuickSight;04/jan/24;AWS re:Invent 2023 - Generative BI in Amazon QuickSight (BSI103);Training;Training;PL III
+Training;QuickSight;04/jan/24;AWS re:Invent 2023 - Enhance your applications with Amazon QuickSight embedded analytics (BSI203);Training;Training;PL III
+Training;QuickSight;05/jan/24;AWS re:Invent 2023 - Modernize business reporting with Amazon QuickSight (BSI204);Training;Training;PL III
+Training;QuickSight;05/jan/24;AWS re:Invent 2023 - What’s new with Amazon QuickSight (BSI205) ;Training;Training;PL III
+Training;QuickSight;08/jan/24;AWS re:Invent 2023 - Scale enterprise BI securely with Amazon QuickSight (BSI206) ;Training;Training;PL III
+Training;QuickSight;08/jan/24;AWS re:Invent 2023 - Interactive cost reporting with Amazon QuickSight (BSI207);Training;Training;PL III
+US;Tableau;09/ago/24;RDC Quality Assurance;Project;New Iniciative;PL IV
+Training;QuickSight;21/fev/24;Amazon QuickSight Rotating Workshop Series: Build Stunning Dashboards;Training;Training;PL IV
+Training;BMW Group Partner Academy;22/fev/24;WBT - Partner Academy: Onboarding Course;Training;Training;PL IV
+UK;Power BI;16/fev/24;Austria Financial Controlling - General Management;Project;New Iniciative;PL IV
+Training;BMW Group Partner Academy;25/abr/24;Basic Data Driver License WBT Curriculum;Training;Training;PL IV
+US;Tableau;21/mar/24;Drivers Guide Analytics - Phase 1;Project;New Iniciative;PL IV
+Training;QuickSight;;The Complete QuickSight Course 2022: From Zero to Expert!;Training;Training;
+US;Tableau;06/mar/25;Drivers Guide Analytics - Phase 2;Project;New Iniciative;PL IV
+MX;QuickSight;05/fev/25;Online Lead Generation;Project;Migration Shop;PL IV
+Training;BMW Group Partner Academy;07/out/24;WBT - Advanced Data Driver License;Training;Training;PL IV
+MX;QuickSight;11/fev/25;Generation Online + Ventas;Project;Migration Shop;PL V
+MX;QuickSight;21/fev/25;Test Drive Dashboard;Project;Migration Shop;PL V
+MX;QuickSight;10/fev/25;Respuesta Encuesta Dealer;Project;Migration Shop;PL V
+MX;QuickSight;10/fev/25;Respuesta Encuesta Online;Project;Migration Shop;PL V
+Training;Qlik Sense;;Qlik Sense Certification - The Complete Practical Course;Training;Training;PL V
+UK;QuickSight;15/mai/25;Gen5 ReUse Statistik Kunde;Project;Migration Shop;PL V
+US;Power BI;;FF-AM Finances - Liquidity Planning - Phase 2;Project;Migration;PL V
+UK;QuickSight;12/ago/25;H Störaufkommen APM Organisatorisch;Project;Migration Shop;PL V
+UK;QuickSight;12/ago/25;IH Störaufkommen FTS;Project;Migration Shop;PL V
